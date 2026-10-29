@@ -165,8 +165,8 @@ file-okiba group delete GROUP_ID --force --yes
 使い方・再開・秘密情報の扱いをまとめた[スキル](skills/file-okiba/SKILL.md)を同梱しています。CLIをPATHへ導入したうえで、スキルのフォルダーをコピーしてください。サービスのソースやNode.jsは不要です。
 
 ```sh
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R skills/file-okiba "${CODEX_HOME:-$HOME/.codex}/skills/"
+mkdir -p "$HOME/.agents/skills"
+cp -R skills/file-okiba "$HOME/.agents/skills/"
 ```
 
 同名のスキルがある場合は、そのフォルダーをスキル検索先の外へ退避してからコピーします。導入後は新しいエージェントセッションで `$file-okiba` を指定するか、file-okibaでの転送・管理を依頼してください。
